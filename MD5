@@ -1,7 +1,7 @@
-d232c7bb70df4b526abedc85085d755b *DESCRIPTION
+33b2333b991eb4c88f068b9f969d7537 *DESCRIPTION
 0f714634d9b6e945d6b30e5d6276b22e *NAMESPACE
-3475b3b0836438b04ecd39e4aa40c031 *R/funcs_multilateral.R
-45625426acf65023e0e059976aea2bb2 *build/partial.rdb
+8d14a8d156fa61a37e8e29a0665587f0 *R/funcs_multilateral.R
+8c5ec8271b110176c7347f31ad819ee9 *build/partial.rdb
 8ea27ef314f5f755db51d0b68c00e136 *data/multil_data.RData
 c985d4c3d70ac95678dc39ad8a43b700 *man/I_nt.Rd
 3ea8617d584ec1f726cebc73253bd184 *man/billy_inp_p.Rd
@@ -16,7 +16,7 @@ a3dc55a0b1a78ba7175b1a5a18caa551 *man/dat.q.Rd
 7376da274e0d2049d13285d74ca68122 *man/indexes.Rd
 7d42ee8fa4417d8a0abc42d876b1194b *man/multicomp.Rd
 20762462131a2e59a4d524d0510712a1 *man/multicompPAR.Rd
-5294a0753fa04aa409f1d5ba2ac41baa *man/multilateral-package.Rd
+cf4cec1ba555f2e8bc39a5c8e2de0e38 *man/multilateral-package.Rd
 b0b0be9b30e97334b4de874401c7ea77 *man/multilateral.Rd
 07b6d212a506b27804f99ccafd709b5a *man/rail_out_p.Rd
 9e9a2a90321d21965a200020b37cd5b5 *man/rail_out_q.Rd

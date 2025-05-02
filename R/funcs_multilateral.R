@@ -174,7 +174,16 @@ multicomp = function(data.x,data.y,
      # }
    
    #require(igraph)
+   #AA <<- I
    netwk = ape::mst(I)
+   
+   #g <- igraph::graph_from_adjacency_matrix(I, mode = "max", weighted = TRUE, diag = FALSE)
+   # Step 3: Compute the minimum spanning tree
+   #mst_g <- igraph::mst(g, weights = E(g)$weight)
+   # Step 4: Get the adjacency matrix (0/1) of the MST
+   #netwk0 <- as.matrix(igraph::as_adjacency_matrix(mst_g, attr = NULL))
+   #netwk0 = igraph::mst(I)
+
    rownames(netwk) = rownames(data.x)
    colnames(netwk) = rownames(data.x)
    rownames(I) = rownames(data.x)
@@ -191,9 +200,12 @@ multicomp = function(data.x,data.y,
     # plot(netwk2)
    
    
-   ig = igraph::graph.adjacency(netwk)
+   #ig = igraph::graph.adjacency(netwk)
+   ig = igraph::graph_from_adjacency_matrix(netwk)
+   
   # ig1 = graph.adjacency(netwk2)
-   mst0 = igraph::minimum.spanning.tree(ig)
+   #mst0 = igraph::minimum.spanning.tree(ig)
+   mst0 = igraph::mst(ig)
   # mst1 = minimum.spanning.tree(ig1)   
    
    if(plotting==TRUE){
@@ -431,7 +443,8 @@ multicompPAR = function(data.x,data.y,
      
    
    
-   ig = igraph::graph.adjacency(netwk)
+   #ig = igraph::graph.adjacency(netwk)
+   ig = igraph::graph_from_adjacency_matrix(netwk)
    if(plotting==TRUE){
    igraph::tkplot(ig,vertex.size=10,
    #layout=layout.auto,
